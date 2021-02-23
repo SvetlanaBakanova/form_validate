@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form action="mail.php" method="POST" class="js-form row g-3" >
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" name="user-email" class="form-control" placeholder="exemple@gmail.com" data-validate-field = "email" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" name="user-password" class="form-control" placeholder="Enter your password" data-validate-field="password" required>
+            </div>
+            <div class="col-12">
+                <label for="inputNumber" class="form-label">Mobile number</label>
+                <input type="tel" name="user-tel" class="form-control" placeholder="Enter your phone" required data-validate-field ="phone"> 
+            </div>
+            <div class="col-12">
+                <label for="inputName">Name</label>
+                <input type="text" name="user-name" class="form-control" placeholder="Enter your name" required data-validate-field ="name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" name="user-city" class="form-control" data-validate-field ="city">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/validate.min.js"></script>
+    <script src="js/common-4.js"></script>
+</body>
+
+</html>
