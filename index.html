@@ -11,35 +11,38 @@
 
 <body>
     <div class="container">
-        <form action="mail.php" method="POST" class="js-form row g-3" >
+        <form action="mail.php" method="POST" class="js-form row g-3">
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" name="user-email" class="form-control" placeholder="exemple@gmail.com" data-validate-field = "email" required>
+                <input type="email" name="user-email" class="form-control" placeholder="exemple@gmail.com"
+                    data-validate-field="email" required>
             </div>
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" name="user-password" class="form-control" placeholder="Enter your password" data-validate-field="password" required>
+                <input type="password" name="user-password" class="form-control" placeholder="Enter your password"
+                    data-validate-field="password" required>
             </div>
             <div class="col-12">
                 <label for="inputNumber" class="form-label">Mobile number</label>
-                <input type="tel" name="user-tel" class="form-control" placeholder="Enter your phone" required data-validate-field ="phone"> 
+                <input type="tel" name="phone" class="form-control phone" placeholder="+380" required
+                    data-validate-field="phone" minlength="9">
             </div>
             <div class="col-12">
                 <label for="inputName">Name</label>
-                <input type="text" name="user-name" class="form-control" placeholder="Enter your name" required data-validate-field ="name">
+                <input type="text" name="name" class="form-control name" placeholder="Enter your name" required
+                    data-validate-field="name">
             </div>
             <div class="col-md-6">
                 <label for="inputCity" class="form-label">City</label>
-                <input type="text" name="user-city" class="form-control" data-validate-field ="city">
+                <input type="text" name="user-city" class="form-control" data-validate-field="city">
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <button type="submit" name="submit" class="btn btn-primary">Sign in</button>
             </div>
         </form>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/inputmask.min.js"></script>
     <script src="js/validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/common-4.js"></script>
 </body>
 
